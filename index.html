@@ -427,7 +427,7 @@
 <section id="contact" class="content">
   <div class="container">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:purchase@maretco.online">purchase@maretco.online.com</a></p>
+    <p>Email: <a href="mailto:purchase@maretco.online">purchase@maretco.online</a></p>
     <p>Business Hours: Mon–Fri, 9:00 AM–6:00 PM (UTC+8)</p>
     <p>Response Time: Within one business day.</p>
   </div>
@@ -504,7 +504,7 @@
   // ============================================================
   //
   // ============================================================
-  const WHATSAPP_NUMBER = "+ 886 0983507210";
+  const WHATSAPP_NUMBER = "886983507210";
 
   const services = [
     {
@@ -611,7 +611,7 @@
     if (!valid) return;
 
     const lines = [
-      `*New Service Inquiry — M Analytics*`,
+      `*New Service Inquiry — Maretco*`,
       ``,
       `*Service:* ${currentService.title}`,
       `*Name:* ${name}`,
@@ -622,7 +622,7 @@
 
     const text = encodeURIComponent(lines.join('\n'));
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
-    window.open(url, '_blank', 'noopener');
+    window.location.href = url;
     closeModal();
   });
 </script>
